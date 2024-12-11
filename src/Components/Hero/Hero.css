@@ -1,0 +1,114 @@
+.hero {
+    margin: 0px 120px;
+    margin-top: 90px;
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.hero-explore {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 3px 4px;
+    padding-left: 10px;
+    border-radius: 60px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hero-explore p {
+    color: #292929;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-explore img{
+    width:36px;
+}
+
+.hero-dot-play {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 15px; /* Add some padding */
+}
+
+.hero-dots {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+
+.hero-dot.orange {
+    background: orangered;
+}
+
+.hero-play {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.hero-play img {
+    height: 40px;
+}
+
+.hero-play p {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-dot-play {
+        margin-top: 80px; /* Adjust margin for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align for smaller screens */
+    }
+
+    .hero-dots {
+        gap: 10px; /* Reduce gap */
+    }
+
+    .hero-play {
+        gap: 15px; /* Reduce gap */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align for smaller screens */
+    }
+
+    .hero-play img {
+        height: 30px; /* Reduce image size */
+    }
+
+    .hero-play p {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-dot-play {
+        margin-top: 50px; /* Further adjust for very small screens */
+    }
+
+    .hero-play p {
+        font-size: 12px; /* Smaller font size for very small screens */
+    }
+}
